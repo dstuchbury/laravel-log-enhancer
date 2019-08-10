@@ -17,10 +17,10 @@ class LogEnhancerTest extends TestCase
 
         $handlers = $logger->getHandlers();
         foreach ($handlers as $handler) {
-           if (config('laravel_log_enhancer.log_git_data')) {
+            if (config('laravel_log_enhancer.log_git_data')) {
                 $this->assertInstanceOf(GitProcessor::class, $handler->popProcessor());
             }
-        
+
             if (config('laravel_log_enhancer.log_memory_usage')) {
                 $this->assertInstanceOf(MemoryUsageProcessor::class, $handler->popProcessor());
             }
@@ -29,7 +29,7 @@ class LogEnhancerTest extends TestCase
 
             if (config('laravel_log_enhancer.log_request_details')) {
                 $this->assertInstanceOf(WebProcessor::class, $handler->popProcessor());
-             }
+            }
         }
     }
 
