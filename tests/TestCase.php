@@ -4,7 +4,7 @@ namespace Dstuchbury\LaravelLogEnhancer\Test;
 
 use Orchestra\Testbench\TestCase as Orchestra;
 
-abstract class TestCase extenda Orchestra
+abstract class TestCase extends Orchestra
 {
     protected function getPackageProviders($app)
     {
@@ -19,6 +19,6 @@ abstract class TestCase extenda Orchestra
     */
     protected function getEnvironmentSetUp($app)
     {
-        $app['config']->set('logging.channels.stack.tap', [\Dstuchbury\LaravelLogEnhancer\LogEnhancer::class];
+        $app['config']->set('logging.channels.stack.tap', [\Dstuchbury\LaravelLogEnhancer\LogEnhancer::class]);
     }
 }
