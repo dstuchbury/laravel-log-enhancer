@@ -26,7 +26,7 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "Danstuchbury\\LaravelLogEnhancer\\Test": "tests"
+            "Danstuchbury\\LaravelLogEnhancer\\Test\\": "tests"
         }
     },
     "extra": {
