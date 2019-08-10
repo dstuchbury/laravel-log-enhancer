@@ -1,6 +1,6 @@
 <?php
 
-namespace Dstuchbury\LaravelLogEnhancer\Test
+namespace Dstuchbury\LaravelLogEnhancer\Test;
 
 use Orchestra\Testbench\TestCase as Orchestra;
 
