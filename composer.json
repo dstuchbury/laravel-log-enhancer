@@ -15,4 +15,16 @@
         }
     ],
     "minimum-stability": "dev"
+    "autoload": {
+        "psr-4": {
+            "dstuchbury\\LaravelLogEnhancer": "src/"
+        }
+    },
+    "extra": {
+    "laravel": {
+        "providers": [
+            "dstuchbury\\LaravelLogEnhancer\\LaravelLogEnhancerServiceProvider"
+        ]
+    }
+}
 }
