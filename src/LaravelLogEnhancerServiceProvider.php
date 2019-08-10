@@ -16,7 +16,7 @@ class LaravelLogEnhancerServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->publishes([
-            __DIR__.'/..config/laravel_log_enhancer.php' => config_path ('laravel_log_enhancer/php'),
+            __DIR__.'/../config/laravel_log_enhancer.php' => config_path ('laravel_log_enhancer/php'),
         ], 'laravel-log0enhancer-config');
     }
 
@@ -28,7 +28,7 @@ class LaravelLogEnhancerServiceProvider extends ServiceProvider
     public function register()
     {
         $this->mergeConfigFrom(
-            __DIR__.'/..config/laravel_log_enhancer.php',
+            __DIR__.'/../config/laravel_log_enhancer.php',
             'laravel_log_enhancer'
         );
     }
