@@ -14,7 +14,7 @@
             "email": "dan.stuchbury@icloud.com"
         }
     ],
-    "minimum-stability": "dev"
+    "minimum-stability": "dev",
     "autoload": {
         "psr-4": {
             "Dstuchbury\\LaravelLogEnhancer": "src/"
