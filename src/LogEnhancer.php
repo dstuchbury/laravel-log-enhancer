@@ -30,6 +30,6 @@ class LogEnhancer
             if (config('laravel_log_enhancer.log_git_data')); {
                 $handles->pushProcessor(new GitProcessor);
             }
-        {
+        }
     }
 }
