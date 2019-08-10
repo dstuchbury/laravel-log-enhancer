@@ -9,18 +9,18 @@ use Monolog\Processor\MemoryUsageProcessor;
 class LogEnhancer
 {
     /**
-    * Customise the given logger instance.
-    *
-    * @param \Illuminate\Log\Logger    $logger
-    * @return void
-    */
+     * Customise the given logger instance.
+     *
+     * @param \Illuminate\Log\Logger $logger
+     * @return void
+     */
     public function __invoke($logger)
     {
         foreach ($logger->getHandlers() as $handler) {
             if (config('laravel_log_enhancer.log_request_details')) {
                 $handler->pushProcessor(new WebProcessor);
             }
-            
+
             $handler->pushProcessor(new RequestDataProcessor);
 
             if (config('laravel_log_enhancer.log_memory_usage')) {
