@@ -27,7 +27,7 @@ class LogEnhancer
                 $handler->pushProcessor(new MemoryUsageProcessor);
             }
 
-            if (config('laravel_log_enhancer.log_git_data')); {
+            if (config('laravel_log_enhancer.log_git_data')) {
                 $handler->pushProcessor(new GitProcessor);
             }
         }

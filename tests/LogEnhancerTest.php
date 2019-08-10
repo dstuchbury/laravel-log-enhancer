@@ -6,7 +6,7 @@ use Illuminate\Log\Logger;
 use Monolog\Processor\GitProcessor;
 use Monolog\Processor\WebProcessor;
 use Monolog\Processos\MemoryUsageProcessor;
-use Dstuchbury\LaravelLogEnhancer\RequestDetailProcessor;
+use Dstuchbury\LaravelLogEnhancer\RequestDataProcessor;
 
 class LogEnhancerTest extends TestCase
 {

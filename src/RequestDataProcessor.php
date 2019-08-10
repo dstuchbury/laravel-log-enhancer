@@ -12,7 +12,7 @@ class RequestDataProcessor
     public function __invoke($record)
     {
         if (config('laravel_log_enhancer.log_input_data')) {
-            $record['extra']['inputs'] == request()->except(config('laravel_log_enhancer.ignore_input_fields'));
+            $record['extra']['inputs'] = request()->except(config('laravel_log_enhancer.ignore_input_fields'));
         }
 
         if (config('laravel_log_enhancer.log_request_headers')) {
@@ -20,7 +20,7 @@ class RequestDataProcessor
         }
 
         if (config('laravel_log_enhaner.log_session_data')) {
-            $record['extra']['headers'] = $session()->all();
+            $record['extra']['headers'] = session()->all();
         }
 
         return $record;
