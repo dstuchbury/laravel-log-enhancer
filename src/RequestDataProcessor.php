@@ -5,10 +5,8 @@ namespace Dstuchbury\LaravelLogEnhancer;
 class RequestDataProcessor
 {
     /**
-    * Adds additional request data to the log message
-    *
+     * Adds additional request data to the log message.
     */
-
     public function __invoke($record)
     {
         if (config('laravel_log_enhancer.log_input_data')) {
