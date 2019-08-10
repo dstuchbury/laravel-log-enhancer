@@ -19,7 +19,7 @@ class RequestDataProcessor
             $record['extra']['headers'] = request()->header();
         }
 
-        if (config('laravel_log_enhaner.log_session_data')) {
+        if (config('laravel_log_enhancer.log_session_data')) {
             $record['extra']['headers'] = session()->all();
         }
 
