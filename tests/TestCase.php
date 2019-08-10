@@ -8,7 +8,7 @@ abstract class TestCase extends Orchestra
 {
     protected function getPackageProviders($app)
     {
-        return ['Dstuchbury\:aravelLogEnhancer\LaravelLogEnhancerServiceProvider'];
+        return ['Dstuchbury\LaravelLogEnhancer\LaravelLogEnhancerServiceProvider'];
     }
 
     /**
