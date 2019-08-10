@@ -21,6 +21,8 @@ class RequestDataProcessor
             $record['extra']['session'] = session()->all();
         }
 
+        $record['extra']['result'] = true;
+
         return $record;
     }
 }
