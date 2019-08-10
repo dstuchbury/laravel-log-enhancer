@@ -4,7 +4,7 @@ namespace Dstuchbury\LaravelLogEnhancer;
 
 use Illuminate\Support\ServiceProvider;
 
-class LaravelLogEnhancerServiceProvider
+class LaravelLogEnhancerServiceProvider extends ServiceProvider
 {
 
     /**
