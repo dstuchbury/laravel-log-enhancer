@@ -17,14 +17,14 @@
     "minimum-stability": "dev",
     "autoload": {
         "psr-4": {
-            "Dstuchbury\\LaravelLogEnhancer\": "src/"
+            "Dstuchbury\\LaravelLogEnhancer\\": "src/"
         }
     },
     "extra": {
-    "laravel": {
-        "providers": [
-            "Dstuchbury\\LaravelLogEnhancer\\LaravelLogEnhancerServiceProvider"
-        ]
+        "laravel": {
+            "providers": [
+                "Dstuchbury\\LaravelLogEnhancer\\LaravelLogEnhancerServiceProvider"
+            ]
+        }
     }
-}
 }
