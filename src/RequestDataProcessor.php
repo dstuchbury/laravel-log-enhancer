@@ -20,7 +20,7 @@ class RequestDataProcessor
         }
 
         if (config('laravel_log_enhancer.log_session_data')) {
-            $record['extra']['headers'] = session()->all();
+            $record['extra']['session'] = session()->all();
         }
 
         return $record;
