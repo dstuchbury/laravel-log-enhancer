@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/dstuchbury/laravel-log-enhancer.svg?branch=master)](https://travis-ci.org/dstuchbury/laravel-log-enhancer)
+
 # Laravel Log Enhancer (Laravel 5.6 to Laravel 5.8)
 Laravel's logging system helps a lot for storing data as well as while troubleshooting some hidden bugs. The data related to the exception automatically gets logged whenever something goes wrong.
 
