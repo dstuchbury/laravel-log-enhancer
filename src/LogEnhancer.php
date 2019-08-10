@@ -21,7 +21,7 @@ class LogEnhancer
                 $handler->pushProcessor(new WebProcessor);
             }
             
-            $handler->pushProcessor(new RequestProcessor);
+            $handler->pushProcessor(new RequestDataProcessor);
 
             if (config('laravel_log_enhancer.log_memory_usage')) {
                 $handler->pushProcessor(new MemoryUsageProcessor);
