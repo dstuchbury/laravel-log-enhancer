@@ -11,7 +11,7 @@ class LogEnhancer
     /**
      * Customise the given logger instance.
      *
-     * @param \Illuminate\Log\Logger $logger
+     * @param  \Illuminate\Log\Logger  $logger
      * @return void
      */
     public function __invoke($logger)

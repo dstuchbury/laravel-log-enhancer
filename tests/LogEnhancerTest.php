@@ -43,7 +43,7 @@ class LogEnhancerTest extends TestCase
         $requestDataProcessor = new RequestDataProcessor;
         $record = $requestDataProcessor($record);
 
-        $this->assertArrayNotHasKey('headers', $record['extra']);
+        $this->assertArrayNotHasKey('inputs', $record['extra']);
     }
 
     /** @test */
