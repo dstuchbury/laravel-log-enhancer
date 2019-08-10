@@ -20,6 +20,15 @@
             "Dstuchbury\\LaravelLogEnhancer\\": "src/"
         }
     },
+    "require-dev": {
+        "phpunit/phpunit": "^7.0",
+        "orchestra/testbench": "~3.8.0"
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Danstuchbury\\LaravelLogEnhancer\\Test": "tests"
+        }
+    },
     "extra": {
         "laravel": {
             "providers": [
