@@ -9,7 +9,7 @@ class RequestDataProcessor
     *
     */
 
-    public function _invoke($record)
+    public function __invoke($record)
     {
         if (config('laravel_log_enhancer.log_input_data')) {
             $record['extra']['inputs'] == request()->except(config('laravel_log_enhancer.ignore_input_fields'));
