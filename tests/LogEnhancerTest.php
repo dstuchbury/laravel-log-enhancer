@@ -5,12 +5,12 @@ namespace Dstuchbury\LaravelLogEnhancer\Test;
 use Illuminate\Log\Logger;
 use Monolog\Processor\GitProcessor;
 use Monolog\Processor\WebProcessor;
-use Monolog\Processos\MemoryUsageProcessor;
+use Monolog\Processor\MemoryUsageProcessor;
 use Dstuchbury\LaravelLogEnhancer\RequestDataProcessor;
 
 class LogEnhancerTest extends TestCase
 {
-    /** @test **/
+    /** @test */
     public function it_adds_request_details_to_logs()
     {
         $logger = $this->app[Logger::class];
@@ -33,7 +33,7 @@ class LogEnhancerTest extends TestCase
         }
     }
 
-    /** @test **/
+    /** @test */
     public function it_skips_input_details_as_per_the_configuration()
     {
         $record = [];
@@ -46,7 +46,7 @@ class LogEnhancerTest extends TestCase
         $this->assertArrayNotHasKey('headers', $record['extra']);
     }
 
-    /** @test **/
+    /** @test */
     public function it_adds_other_details_as_per_the_configuration()
     {
         $record = [];
