@@ -1,4 +1,4 @@
-<? php
+<?php
 
 return [
     'log_request_details' => true,
@@ -16,3 +16,4 @@ return [
     // Specify the inputs from the user that should be ignored
     'ignore_input_fields' => ['password', 'confirm_password'],
 ];
+
