@@ -12,11 +12,11 @@ abstract class TestCase extends Orchestra
     }
 
     /**
-    * Define environment setup
-    *
-    * @param \Illuminate\Foundation\Application     $app
-    * @return void
-    */
+     * Define environment setup.
+     *
+     * @param  \Illuminate\Foundation\Application  $app
+     * @return void
+     */
     protected function getEnvironmentSetUp($app)
     {
         $app['config']->set('logging.channels.stack.tap', [\Dstuchbury\LaravelLogEnhancer\LogEnhancer::class]);
