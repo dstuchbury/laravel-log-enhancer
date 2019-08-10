@@ -61,4 +61,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## Special Thanks to
 
 * [Laravel](https://laravel.com) Community
-
