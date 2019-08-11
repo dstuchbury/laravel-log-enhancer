@@ -69,4 +69,14 @@ class LogEnhancerTest extends TestCase
             $this->assertArrayNotHasKey('session', $record['extra']);
         }
     }
+
+    /** @test */
+    public function it_has_result_element()
+    {
+        $record = [];
+        $requestDataProcessor = new RequestDataProcessor();
+        $record = $requestDataProcessor($record);
+
+        $this->assertArrayHasKey('result', $record['extra']);
+    }
 }
